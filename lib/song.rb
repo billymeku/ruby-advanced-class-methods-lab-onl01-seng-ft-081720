@@ -44,6 +44,8 @@ end
      def self.alphabetical
        @@all.sort_by{|song| song.name}
        end 
+       
+
  def self.new_from_filename(filename)
     file = filename.split(" - ")
     artist = file [0]
@@ -67,7 +69,7 @@ end
   end
 
 def self.destroy_all
-  self.all.clear
+  @@all.clear
 end
- 
+
 end
